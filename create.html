@@ -1,0 +1,106 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+
+
+<br>
+
+<div class="row g-3">
+    
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+</div>
+<br>
+<form class="row g-3">
+
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">State</label>
+        <input type="text" class="form-control" id="inputState">
+    </div>
+    
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" >
+    </div>
+
+    <div class="col-md-2">
+        <label for="inputNumber" class="form-label">Pincode</label>
+        <input type="phone" class="form-control" id="inputZip">
+    </div>
+
+    <div class="col-md-2">
+      <label for="inputNumber" class="form-label">Phone Number</label>
+      <input type="phone" class="form-control" id="inputZip">
+    </div>
+
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Quantity</label>
+        <select id="inputState" class="form-select">
+          <option selected>0-5</option>
+          <option selected>5-10</option>
+          <option selected>10-15</option>
+          <option selected>15-20</option>
+          <option selected>above 20</option>
+        </select>
+    </div>
+
+    
+    <div >
+      <div class="form-check" >
+        <p>Food type</p>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"  >
+          Veg
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Non Veg
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <div class="form-check">
+        <p>Meal</p>
+        <input class="form-check-input" type="radio" name="meal" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"  >
+          Snacks
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="meal" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Lunch
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="meal" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Dinner
+        </label>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="form-group">
+        <button class= "btn btn-outline-dark" type="submit">Post</button>
+    </div>
+    
+</form>
+
+
+{% endblock content  %}
